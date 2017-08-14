@@ -1,0 +1,25 @@
+<div class="round-edged card-wrap">
+
+   <div class="round-edged vehicle-title">{{vehicleDetail.vehicleType.exampleCar}} </div>
+<div class="round-edged vendor-details">
+      <div>{{vehicleDetail.vehicleType.title}}</div>
+   </div>
+   <img class="vehicle-image" ng-src="https://www.mydriver.com/{{vehicleDetail.vehicleType.images.web}}" alt="Vehicle Image">   
+
+   <div class="round-edged comfort-details">
+      <ul>
+         <li >Air Conditioned</li>
+         <li>Fits {{vehicleDetail.vehicleType.nrOfPassengers}} Passengers</li>
+         <li>Fits {{vehicleDetail.vehicleType.nrOfBaggage}} Bags</li>
+      </ul>
+   </div>
+
+   
+
+   <div class="round-edged price">
+      <div>{{((parseInt(vehicleDetail.amountNet)+(parseInt(vehicleDetail.amountNet)*15/100))/100).toFixed(2)}}</div>
+      <div>{{vehicleDetail.currency}}</div>
+   </div>
+
+</div>
+<div style="clear: both;"></div>

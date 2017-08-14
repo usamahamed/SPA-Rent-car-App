@@ -1,0 +1,19 @@
+
+<div class="header-card " ng-include src="'app/shared/locationDetailsCard.html'"></div>
+
+<div class="header-card " ng-include src="'app/shared/searchCard.html'"></div>
+
+	<div class="header-card " ng-include src="'app/shared/selectTme.html'"></div>
+	<div class="buttons-container" >
+	<div class="save-button" ng-click="fetch()">Search</div>
+	<div class="show-button" ng-click="showtimepanel()">↡ Show Time/Data Panel </div></div>
+
+	<div style="clear: both;"></div>
+<div class=spinner></div>
+<div ng-repeat="vehicleDetail in vehiclesDetails | filter: searchVendor | filter: searchMakeModel" ng-click="onVehicleClicked(vehicleDetail)" track by vehicleDetail.$$hashKey>
+	<div id="usama" class="repeating-card" ng-include src="'app/shared/vehicleDetailCard.html'"></div>
+
+</div>
+<div class="no-data"></div>
+
+
