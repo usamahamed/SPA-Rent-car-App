@@ -26,8 +26,12 @@
 			//display message in case of no data
 			if(arr.length===0){
 				$('.no-data').fadeIn(300).html("There is no cars available in this time/date");
+			        $('.show-button').show();
+
 			}else{
 				$('.no-data').fadeOut(300)
+			        $('.show-button').show();
+
 			}
 			//assign to the controller scope
 			$scope.vehiclesDetails=arr;
@@ -61,7 +65,6 @@
 		$('.spinner').show(); 	
 		$('.app-container').slideUp(300);
 		$('.save-button').css("display","none");
-	    $('.show-button').show();
 		$('.buttons-container').css({'top': '142px','margin': '1px -32px','position': 'absolute'	});
 		cartrawler.getRawJsonData().then(onDataRecived, onError);
 
@@ -71,7 +74,7 @@
 		 */
 	 $scope.showtimepanel=	function(){
 	 	$('.app-container').slideDown(300);
-	    $('.no-data').hide(300);
+	        $('.no-data').hide(300);
 	   	$('.show-button').css("display","none");
 		$('.repeating-card').css({'top':'266px','-webkit-transition':'ALL .5s ease-in-out','-transition':'ALL .5s ease-in-out'});
 		$('.buttons-container').css({'top': '495px','margin': '1px 64px','position': 'absolute','-webkit-transition':'ALL .5s ease-in-out','-transition':'ALL .5s ease-in-out'});
