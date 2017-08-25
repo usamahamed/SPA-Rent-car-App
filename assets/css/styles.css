@@ -197,7 +197,7 @@
 .no-data{
      display: none;
     position: relative;
-    top: 181px;
+top: 339px;
     left: -3px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -232,12 +232,12 @@
 }
 
 .buttons-container {
-     position: absolute;
-    bottom: -30px;
+   position: absolute;
+    bottom: 180px;
     right: 0;
     height: 83px;
     font-family: "Roboto", sans-serif;
-    left: 580px;
+    left: 763px;
 }
 
 .cancel-button,
