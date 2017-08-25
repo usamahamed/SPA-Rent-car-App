@@ -6,6 +6,7 @@
 	* Controller to manage the detailed car view page
 	*/
 	var VehicleController = function($scope, $routeParams, $location, cartrawler) {
+		$scope.parseInt = parseInt;
 
 		/**
 		* Find and add the current vehicle to scope
