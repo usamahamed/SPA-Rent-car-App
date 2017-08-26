@@ -195,10 +195,9 @@
   font-weight: bold;
 }
 .no-data{
-     display: none;
-    position: relative;
-top: 339px;
-    left: -3px;
+   display: none;
+    position: absolute;
+    bottom: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -209,13 +208,13 @@ top: 339px;
     -ms-box-shadow: 0 0 15px #666;
     -o-box-shadow: 0 0 15px #666;
     box-shadow: 0 0 15px #005b9a;
-    position: relative;
     border-left: 10px solid #005b9a;
     text-shadow: 1px 1px 0 #005b9a;
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/45816/noisy-bg.png) #005b9a;
     color: #fff;
     padding: 25px;
     font-family: Arial;
+    width: 100%;
 }
 
 .app-container {
