@@ -876,10 +876,7 @@
   float: none;
   top: -15px;
 }
-.datepicker.compact .buttons-container {
-  position: relative;
-  float: right;
-}
+
 
 
 .spinner{
@@ -944,4 +941,61 @@
   to {
     transform: rotate(359deg);
   }
+}
+
+
+
+
+/* Extra Small */
+@media(max-width:619px){
+
+	.buttons-container {
+    bottom: -245px;
+    
+    left: 244px;
+		}
+.app-container{
+	top:277px;
+}
+.header-card{
+	    margin-bottom: 43px;
+}
+.show-button{
+	margin-top: 185px;
+    margin-left: -43px;
+}
+}
+
+
+
+/* Small */
+@media(min-width:618px) and (max-width:895px){
+.show-button{
+	margin: 155px -544px;
+}
+}
+@media(min-width:896px) and (max-width:991px){
+
+	.buttons-container{
+		    left: 562px;
+	}
+	.show-button{
+	    margin-top: 8px;
+}
+}
+
+/* Medium */
+@media(min-width:992px) and (max-width:1199px){
+
+	.show-button{
+	    margin-top: 6px;
+}
+}
+
+/* Large */
+@media(min-width:1200px){
+
+.show-button{
+	    margin-top: 7px;
+}
 }
