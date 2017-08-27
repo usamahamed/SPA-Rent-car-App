@@ -25,12 +25,14 @@
 			let arr = Object.keys(obj).map((k) => obj[k])
 			//display message in case of no data
 			if(arr.length===0){
+
 				$('.no-data').fadeIn(300).html("There is no cars available in this time/date");
-			        $('.show-button').show();
+				$('.show-button').show();
 
 			}else{
 				$('.no-data').fadeOut(300)
-			        $('.show-button').show();
+					    $('.show-button').show();
+
 
 			}
 			//assign to the controller scope
@@ -66,6 +68,8 @@
 		$('.app-container').slideUp(300);
 		$('.save-button').css("display","none");
 		$('.buttons-container').css({'top': '142px','margin': '1px -32px','position': 'absolute'	});
+		
+
 		cartrawler.getRawJsonData().then(onDataRecived, onError);
 
 		 }
@@ -74,13 +78,13 @@
 		 */
 	 $scope.showtimepanel=	function(){
 	 	$('.app-container').slideDown(300);
-	        $('.no-data').hide(300);
+	    $('.no-data').hide(300);
 	   	$('.show-button').css("display","none");
 		$('.repeating-card').css({'top':'266px','-webkit-transition':'ALL .5s ease-in-out','-transition':'ALL .5s ease-in-out'});
 		$('.buttons-container').css({'top': '495px','margin': '1px 64px','position': 'absolute','-webkit-transition':'ALL .5s ease-in-out','-transition':'ALL .5s ease-in-out'});
 		$('.save-button').show();
 		$('.save-button').css({'position': 'absolute','right': '333px','width': '133px','padding': '0 33px','-webkit-transition':'ALL .5s ease-in-out','-transition':'ALL .5s ease-in-out'	});
-
+		 if ($(window).width() <= 619) {  $('.save-button').css({'margin': '393px -161px'	});} 
 		 }
 	};
 
